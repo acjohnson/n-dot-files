@@ -10,7 +10,7 @@ source $NDF_BASH/system/!base.system.bash
 _load_component 'system'
 
 # Load the rest of the components from the BASH section
-for component in 'aliases' 'completions' 'plugins'; do
+for component in 'aliases' 'completions' 'local' 'plugins'; do
   _load_component $component
 done
 unset component
