@@ -84,7 +84,7 @@ set smarttab
 " set foldenable
 set nofoldenable
 set foldcolumn=0
-set foldmethod=syntax
+set foldmethod=indent
 set foldopen=block,hor,insert,jump,mark,percent,quickfix,search,tag,undo
 
 " Wrap lines at convenient points
