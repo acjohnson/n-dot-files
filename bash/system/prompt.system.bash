@@ -2,7 +2,7 @@
 PS_LCRV='$([ $LCRV -eq 0 ] && echo -e "\[${I_GREEN}\]√" || echo -e "\[${I_RED}\]×")'
 
 # PS Fragment :: OOSM (Out-Of-Service Mode)
-PS_OOSM='$(oosm_active && echo -e " \[${WHITE}\]⊗\[${R_COLOR}\] " || echo " ")'
+PS_OOSM='$(oosm_active && echo -e " \[${WHITE}\]☼\[${R_COLOR}\] " || echo " ")'
 
 # PS Fragment :: USER_COLOR (Root or Regular Users)
 is_user_root && PS_USER_COLOR=${RED} || PS_USER_COLOR=${R_COLOR}
