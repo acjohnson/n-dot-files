@@ -507,7 +507,7 @@ endfunction
   autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
   autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
   autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
-  autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
+  " autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
   autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 " }}
 
@@ -577,32 +577,32 @@ endfunction
 " }}
 
 " Python-mode {{
-  " let g:pymode = 1
-  " let g:pymode_trim_whitespaces = 1
-  " let g:pymode_options_colorcolumn = 0
+  let g:pymode = 1
+  let g:pymode_trim_whitespaces = 1
+  let g:pymode_options_colorcolumn = 0
 
-  " let g:pymode_syntax = 1
+  let g:pymode_syntax = 1
 
-  " let g:pymode_lint = 0
-  " let g:pymode_lint_write = 0
-  " let g:pymode_lint_todo_symbol = 'WW'
-  " let g:pymode_lint_comment_symbol = 'CC'
-  " let g:pymode_lint_visual_symbol = 'RR'
-  " let g:pymode_lint_error_symbol = 'EE'
-  " let g:pymode_lint_info_symbol = 'II'
-  " let g:pymode_lint_pyflakes_symbol = 'FF'
+  let g:pymode_lint = 0
+  let g:pymode_lint_write = 0
+  let g:pymode_lint_todo_symbol = 'WW'
+  let g:pymode_lint_comment_symbol = 'CC'
+  let g:pymode_lint_visual_symbol = 'RR'
+  let g:pymode_lint_error_symbol = 'EE'
+  let g:pymode_lint_info_symbol = 'II'
+  let g:pymode_lint_pyflakes_symbol = 'FF'
 
-  " let g:pymode_rope = 0
-  " let g:pymode_rope_lookup_project = 0
-  " let g:pymode_rope_ropefolder='.ropeproject'
+  let g:pymode_rope = 0
+  let g:pymode_rope_lookup_project = 0
+  let g:pymode_rope_ropefolder='.ropeproject'
 
-  " let g:pymode_doc = 1
-  " let g:pymode_doc_bind = '<leader>h'
+  let g:pymode_doc = 1
+  let g:pymode_doc_bind = '<leader>h'
 
-  " let g:pymode_run = 1
-  " let g:pymode_run_bind = '<leader>r'
+  let g:pymode_run = 1
+  let g:pymode_run_bind = '<leader>r'
 
-  " let g:pymode_virtualenv = 0
+  let g:pymode_virtualenv = 1
   " let g:pymode_virtualenv_path = $VIRTUAL_ENV
 " }}
 
@@ -642,7 +642,7 @@ call vundle#rc()
   Plugin 'vim-airline/vim-airline'
   Plugin 'vim-airline/vim-airline-themes'
   Plugin 'jistr/vim-nerdtree-tabs'
-  Plugin 'davidhalter/jedi-vim'
+  Plugin 'klen/python-mode'
   Plugin 'godlygeek/tabular'
   Plugin 'edkolev/tmuxline.vim'
   Plugin 'airblade/vim-gitgutter'
@@ -651,6 +651,7 @@ call vundle#rc()
 " }}
 
 " Disabled Plugins {{
+  " Plugin 'davidhalter/jedi-vim'
   " Plugin 'klen/python-mode'
   " Plugin 'joonty/vdebug'
   " Plugin 'vim-scripts/perl-support.vim'
