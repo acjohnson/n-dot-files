@@ -13,7 +13,7 @@ export PATH=$PATH:$HOME/.rvm/bin
 export NDF_BASH=$HOME/.bash
 
 # Path to the BIN section (binaries directory)
-export NDF_BIN=$HOME/.bin
+export NDF_BIN=$HOME/bin
 
 # Name of the 'local' component (i.e. custom directory) inside the BASH
 # section. Only the name, no leading or trailing '/'.
