@@ -22,7 +22,7 @@ export WORKON_HOME=$HOME/.virtualenvs
 mkdir -p $WORKON_HOME
 
 # Project directory
-export PROJECT_HOME=$HOME/projects
+export PROJECT_HOME=$HOME/Projects
 mkdir -p $PROJECT_HOME
 
 # Find virtualenvwrapper.sh and source it

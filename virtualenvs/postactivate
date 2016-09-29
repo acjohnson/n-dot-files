@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# This hook is sourced after every virtualenv is activated.
+
+# Prompt Statement 1 :: Interactive Default
+PS1="\n${PS_LCRV}${PS_OOSM}\[${PS_USER_COLOR}\]\u@\h\[${R_COLOR}\]:\[${BLUE}\]\w\[${R_COLOR}\] \[${YELLOW}\] </> \$(basename ${VIRTUAL_ENV})\[${R_COLOR}\]\[${MAGENTA}\] \$(__git_ps1 '  %s ')\[${R_COLOR}\]\n$ "

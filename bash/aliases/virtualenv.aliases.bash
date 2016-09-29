@@ -1,4 +1,3 @@
-# Virtualenvwrapper
 alias v='virtualenvwrapper'
 alias v.w='workon'
 alias v.d='deactivate'
