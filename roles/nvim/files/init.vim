@@ -250,7 +250,7 @@ if dein#load_state(s:nvim_bundle_dir)
     call dein#add("moll/vim-node")
 
     " Color Scheme
-    call dein#add("nbetm/NeoSolarized")
+    call dein#add("morhetz/gruvbox")
 
     " Other
     " call dein#add("mhinz/vim-grepper")
@@ -275,11 +275,16 @@ filetype plugin indent on
 " Plugins Configuration
 " ------------------------------------------------------------------------------
 
-" NeoSolarized --{{
+" gruvbox --{{
 "
-let g:neosolarized_bold = 1
-let g:neosolarized_underline = 1
-let g:neosolarized_italic = 1
+let g:gruvbox_termcolors = 256
+" let g:gruvbox_italic = 1
+" let g:gruvbox_italicize_comments = 1
+let g:gruvbox_contrast_dark = "hard"
+let g:gruvbox_number_column = "bg1"
+let g:gruvbox_sign_column = "bg1"
+let g:gruvbox_color_column = "bg1"
+let g:gruvbox_vert_split = "bg1"
 " }}--
 
 " NERDTree --{{
@@ -312,8 +317,7 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tmuxline#enabled = 0
 let g:airline#extensions#ale#enabled = 1
 let g:airline_powerline_fonts = 1
-let g:airline_theme = 'solarized'
-let g:airline_solarized_bg = 'dark'
+let g:airline_theme = "gruvbox"
 " }}--
 
 " vim-fugitive --{{
@@ -508,7 +512,7 @@ endif
 set background=dark
 
 " Color scheme
-colorscheme NeoSolarized
+colorscheme gruvbox
 
 " ------------------------------------------------------------------------------
 " TODO
